@@ -5,6 +5,7 @@ A set of scripts for running latency tests through JMeter and gathering statisti
 1. JMeter test plans (and only JMeter test plans) in the ./tests directory
 2. JMeter tree results csvs (and only such csvs) in the ./results directory; ideally the JMeter tests in ./tests are configured to save their csvs to this location
 3. JMeter, python, and matplotlib installed
+
 Running the JMeter tests anew every single time is not strictly necessary; if there are already sufficient .csv files in ./results, commenting out the jmeter -n -t $csv line in the load test script will allow for the logs to be re-written and graphs to be re-plotted
 
 # Usage
